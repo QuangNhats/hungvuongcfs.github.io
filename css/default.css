@@ -5,9 +5,49 @@
 
 }
 
+/*NAVBAR*/
+.nav-bar{
+    width:100%;
+    height:56px;
+    padding-left:32px;
+    padding-right:32px;
+    padding-top:3px;
+    position:fixed;
+    z-index:9999;
+    color:#fff;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.nav-toggle{
+    background-color:#fff;
+    color:rgba(206,169,100,1);
+    border-bottom: 1px solid #cccccc;
+}
+
+.nav-bar .nav-header{
+    line-height:1;
+    font-size:20px;
+    font-weight:500;
+    letter-spacing: 1.5px;
+}
+
+/*FOOTER*/
+footer{
+    width:100%;
+    height:64px;
+    text-align:center;
+    line-height:64px;
+    background-color:#8d6e63;
+    color:#fff;
+    font-weight:500;
+}
+
 /*CARD*/
 .admin-profile{
-    height: 379px;
+    height: 400px;
     text-align:center;
     margin:auto;
     max-width:800px;
@@ -125,6 +165,13 @@
     font-size:32px;
 }
 /*PARALLAX*/
+
+.parallax img{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 
 .parallax-text{
     display:table-cell;
