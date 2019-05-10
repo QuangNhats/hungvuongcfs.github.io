@@ -1,8 +1,166 @@
-.background-parallax{
+/*COPYRIGHT (c) 2019 Lavensoft, Inc. LEADER QUANG NHATS*/
 
+/*DEFINE*/
+:root{
+
+}
+
+/*CARD*/
+.admin-profile{
+    height: 379px;
+    text-align:center;
+    margin:auto;
+    max-width:800px;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+    display: flex;
+    flex-direction: row-reverse; 
+}
+
+.admin-card{
+    width: 234px;
+    height: 369px;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.22);
+    background-color: #fff;
+    flex:1;
+    margin:10px;
+}
+
+.admin-avatar-out{
+    background: url(../resources/design/avatar-out.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height:126px;
+    margin-top:32px;
+    padding-top:20px;
+}
+
+.admin-avatar{
+   width: 84px;
+  height: 84px;
+  background-color: #414141;
+  margin:auto;
+  border-radius:50%;
+}
+
+.admin-img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+
+.admin-card-username{
+    height: 22px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: center;
+    color: #8364ee;
+    margin-top:33px;
+}
+
+.admin-stat{
+  height: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #414141;
+}
+
+.admin-descript{
+   width: 150px;
+   margin:auto;
+   margin-top:16px;
+  height: 22px;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: center;
+  color: #414141;
+}
+
+.admin-card-button{
+    width: 172px;
+    height: 38px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(131, 100, 238, 0.67);
+    background-color: #8364ee;
+    margin:auto;
+    margin-top:32px;
+    cursor:pointer;
+}
+
+.admin-card-text{
+    color:#fff;
+    line-height:38px;
+    font-size:14px;
+}
+
+/*CONTAINER*/
+.container{
+    text-align:center;
+}
+
+.section-yellow{
+    width:100%;
+    background: rgba(247,244,238,1);
+    padding:10px;
+    text-align:center;
+}
+
+.section-header{
+    color:rgba(116,102,77,1);
+    font-weight:500;
+    font-size:32px;
+}
+/*PARALLAX*/
+
+.parallax-text{
+    display:table-cell;
+    vertical-align: middle;
+    width:100%;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align:center;
+}
+
+.parallax-text-container{
+    width:66.666667%;
+    margin:auto;
+}
+
+.prl-border{
+    border-bottom:8px solid rgba(206,160,100,1);
+    margin-left:auto;
+    margin-right:auto;
+    width:100px;
+    display:block;
+}
+
+h1{
+    font-size:60px;
+    font-style:normal;
+    font-weight:500;
+    letter-spacing: -0.5px;
+    line-height:1.26;
 }
 
 html,body{
     margin:0;
     height: 100%;
+    font-family: 'Open Sans';
 }
