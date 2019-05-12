@@ -30,6 +30,8 @@
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
+    display:flex;
+    flex-direction:row;
 }
 
 .nav-toggle{
@@ -41,8 +43,101 @@
 .nav-bar .nav-header{
     line-height:1;
     font-size:20px;
-    font-weight:500;
+    font-weight:600;
     letter-spacing: 1.5px;
+    flex:1;
+}
+
+.nav-bar .left-menu{
+    float:left;
+    width:301px;
+    height:100%;
+    flex:1;
+}
+
+.center-menu{
+    width:180px;
+    height:100%;
+    text-align:center;
+    display:flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-menu{
+    width:52px;
+    height:52px;
+    margin:auto;
+}
+
+.center-menu .nav-menu .nav-icon{
+    line-height:48px;
+    color:#61676f;
+    font-size:32px;
+    cursor:pointer;
+}
+
+i.material-icons.nav-icon.active{
+    color:rgba(206,169,100,1);
+}
+
+.nav-menu.active{
+    border-bottom:2px solid rgba(206,169,100,1);
+}
+
+.nav-bar .right-menu{
+    float:right;
+    width: 250px;
+    height:100%;
+    flex:1;
+}
+
+
+
+
+.nav-bar .right-menu .search-box{
+    width:250px;
+    height:calc( 100% - 16px);
+    background-color:#f2f4f5;
+    margin-top:6px;
+    border-radius:25px;
+    float:right;
+    /*border:1px solid #ececec;*/
+}
+
+.nav-bar .right-menu .search-box .search-icon{
+    color:#6d7176;
+    width:36px;
+    height:36px;
+    padding: 7px;
+    padding-left:10px;
+    float:left;
+}
+
+.nav-bar .right-menu .search-box input{
+    background:transparent;
+    border:none;
+    width:200px;
+    height:37px;
+    padding-bottom:7px;
+    padding-left:10px;
+    color:#6d7176;
+    font-weight:400;
+    font-size:15px;
+}
+
+.nav-bar .right-menu .search-box input::placeholder{
+    color:#b3b8be;
+}
+
+input:not([type]):focus:not([readonly]){
+    border:none;
+}
+
+input:not([type]):focus:not([readonly]){
+    border:none;
+    box-shadow:none;
 }
 
 /*FOOTER*/
@@ -197,8 +292,12 @@ footer{
 }
 
 .parallax-text-container{
-    width:66.666667%;
+    width:50.666667%;
     margin:auto;
+}
+
+.parallax-text-container h1{
+    font-weight:600;
 }
 
 .prl-border{
@@ -255,12 +354,14 @@ footer{
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
+    display:none;
 }
 
 .nav-toggle{
-    background-color:#fff;
+    background-color:rgba(206,169,100,1);
     color:rgba(206,169,100,1);
     border-bottom: 1px solid #cccccc;
+    display: fixed;
 }
 
 .nav-bar .nav-header{
@@ -302,5 +403,4 @@ html,body{
     margin:0;
     height: 100%;
     font-family: 'Open Sans';
-    overflow-x: hidden;
 }
