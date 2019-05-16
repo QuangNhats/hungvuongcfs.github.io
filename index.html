@@ -9,19 +9,19 @@
     <link rel="stylesheet" href="./css/fonts.css"/>
     <link rel="stylesheet" href="./css/materialize.min.css"/>
     <link rel="stylesheet" href="css/default.css"/>
+    <script src="modules/require.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="./js/func.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <title>HUNG VUONG CFS</title>
     <script>
-        localStorage.setItem("page","home");
     </script>
 </head>
 <body id="content">
     <!--NAVIGATION BAR-->   
     <div class="nav-bar nav-toggle" id="nav-bar">
-        <script>load("./components/nav-bar.html","#nav-bar");</script>
+        <script>appendNav();</script>
     </div>
     <!--WEB PARALLAX WALLPAPER-->
     <div class="parallax-container" style="height:100%;">
@@ -41,7 +41,29 @@
               <h5 class="header">CÓ GÌ MUỐN NÓI THÌ THOẢI MÁI ĐI AE, ẨN CMN DANH MÀ:))</h5>
             </br>
             </br>
-            <iframe scrolling="no" class="iframe-ques" src="https://docs.google.com/forms/d/e/1FAIpQLSd0tJEwmRKDhCGZwYvRd_D-wuvbjiwK5qCXJ4Car1vFX9wvjw/viewform?embedded=true" width="640" height="572" frameborder="0" marginheight="0" marginwidth="0">Đang tải...</iframe>
+            <!--<iframe scrolling="no" class="iframe-ques" src="https://docs.google.com/forms/d/e/1FAIpQLSd0tJEwmRKDhCGZwYvRd_D-wuvbjiwK5qCXJ4Car1vFX9wvjw/viewform?embedded=true" width="640" height="572" frameborder="0" marginheight="0" marginwidth="0">Đang tải...</iframe>
+            -->
+            
+            <!--CONFESS FORM-->
+            <form id="confess-form" name="confess-form" class="confess-form">
+                <h4>HUNG VUONG CONFESSION</h4>
+                <div style="width:100%;text-align:left">
+                    <a style="color:#ff6157;font-size:14px;text-align:left;">*Bắt buộc</a>
+                </div>
+                </br>
+                <a>Hãy nói hết những điều bạn muốn nói mà chưa nói :"> Yêu, ghét, hận gì cũng ghi ra hết nhé :"> Chúng tớ sẽ không bỏ sót đâuuu *</a>
+                <input type="text" name="confess-input" id="confess-input" placeholder="Nội dung bạn muốn gửi"/>
+                <div class="confess-hastag">
+                    <div class="confess-hastag-icon">
+                        <a>#</a>
+                    </div>
+                    <input class="confess-hastag-input" name="confess-hastag" placeholder="Tùy chỉnh Hastag"/>
+                </div>
+                <button class="btn waves-effect waves-light" id="confess-submit">Gửi
+                    <i class="material-icons right">send</i>
+                  </button>
+            </form>
+
             </div>
           </div>
 

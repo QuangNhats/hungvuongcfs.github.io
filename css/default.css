@@ -2,7 +2,97 @@
 
 /*DEFINE*/
 :root{
+    --shadow-0: 0 1px 4px 0 rgba(0,0,0,0.37);
+    --shadow-1:0 6px 14px 0 rgba(0, 0, 0, 0.22);
 
+    /*COLOR*/
+    --color-50: #ede7f6;
+    --color-100: #d1c4e9;
+    --color-200: #b39ddb;
+    --color-300: #9575cd;
+    --color-400: #7e57c2;
+    --color-500: #673ab7;
+    --color-600: #5e35b1;
+    --color-700: #512da8;
+    --color-800: #4527a0;
+    --color-900: #311b92;
+    --color-A100: #b388ff;
+    --color-A200: #7c4dff;
+    --color-A400: #651fff;
+    --color-A700: #6200ea;
+}
+
+/*INPUT*/
+input[type="text"]:focus{
+    border-bottom:1px solid #b48d7e;
+    -webkit-box-shadow:0 1px 0 0 #b48d7e;box-shadow:0 1px 0 #b48d7e}
+
+/*BUTTON*/
+.btn{
+    background-color:#8d6e63;
+    border-radius:7px;
+}
+
+.btn:hover{
+    background-color: #8d6e63;
+}
+
+/*FORM*/
+.confess-form{
+    width:640px;
+    height:450px;
+    margin:auto;
+    background-color:#fff;
+    box-shadow: var(--shadow-0);
+    border-radius:7px;
+    padding:24px;
+    padding-left:32px;
+    padding-right:28px;
+    text-align:left;
+}   
+
+.confess-form h4{
+    font-weight:500;
+    margin-bottom:24px;
+}
+
+.confess-form a{
+    color:var(--black);
+    font-size:20px;
+    font-weight:500;
+    padding-top:24px;
+}
+
+.confess-form .confess-hastag .confess-hastag-icon{
+    width:48px;
+    float:left;
+    text-align:center;
+}
+
+.confess-form .confess-hastag .confess-hastag-icon a{
+    font-size:48px;
+    font-weight:600;
+    color:#a1887f;
+}
+
+.confess-form .confess-hastag .confess-hastag-input{
+    width:508px;
+    margin-left:24px;
+    border:none;
+    float:left;
+    margin-top:15px;
+    font-size:24px;
+    color:#a1887f;
+    font-weight:500;
+}
+
+.confess-form input{
+}
+
+.confess-form button{
+    margin-top:32px;
+    float:right;
+    background-color: #795548;
 }
 
 /*SCROLL BAR*/
@@ -310,6 +400,29 @@ footer{
 
 /*MOBILE 320 - 860*/
 @media only screen and (min-width: 320px) and (max-width: 860px) {
+    /*CONFESS FORM*/
+    .confess-form{
+        width:100%;
+        height:400px;
+    }
+
+    .confess-form h4{
+        font-size:20px;
+        font-weight:500;
+    }
+
+    .confess-form a{
+        font-size:15px;
+    }
+
+    .confess-form .confess-hastag .confess-hastag-input{
+        width:192px;
+    }
+
+    .confess-form button{
+        margin-top:8px;
+    }
+
     /*CARD*/
     .admin-profile{
         overflow-x:scroll;
@@ -342,6 +455,7 @@ footer{
     }
     /*NAVBAR*/
 .nav-bar{
+    background-color:rgba(206,169,100,1);
     width:100%;
     height:56px;
     padding-left:32px;
@@ -354,14 +468,12 @@ footer{
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    display:none;
 }
 
 .nav-toggle{
-    background-color:rgba(206,169,100,1);
+    background-color:rgb(255, 255, 255);
     color:rgba(206,169,100,1);
     border-bottom: 1px solid #cccccc;
-    display: fixed;
 }
 
 .nav-bar .nav-header{
@@ -369,6 +481,11 @@ footer{
     font-size:18px;
     font-weight:500;
     letter-spacing: 1.5px;
+    display:none;
+}
+
+.nav-bar .right-menu .search-box{
+    display:none;
 }
 
     /*PARALLAX*/

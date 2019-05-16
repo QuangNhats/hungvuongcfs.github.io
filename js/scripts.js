@@ -5,6 +5,11 @@
   //DOCUMENT READY
   $(document).ready(function(){
     $('.parallax').parallax();//SETTING UP PARALLAX
+
+    //SUBMIT CONFESS
+    $("#confess-submit").click(function(){
+      confessFormSubmit();
+    });
   });
 
   //DOCUMENT SCROLL
