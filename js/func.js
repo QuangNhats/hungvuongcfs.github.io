@@ -13,7 +13,7 @@ function confessFormSubmit(){
             cfhastag : hastag
         },
         success: function(data) {
-            //console.log(data);
+            console.log(data);
         }
       });
 }
